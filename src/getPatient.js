@@ -1,12 +1,25 @@
 import React from "react";
 
-const getPatient = () => {
+const GetPatient = () => {
+
+
+
     return (
         <div>
-            <h1>Submit </h1>
+            <h3>Submit</h3>
             <p> Patient Id for getting the information</p>
+
+            <form className='new-item-form'>
+                <div className="form-row">
+                    <label htmlFor='item'>PatientID</label>
+                    <input
+                        placeholder='35702'
+                        type="text" id='item' />
+                </div>
+            </form>
+            <button className='btn'>Get Details</button>
         </div>
     );
 };
 
-export default getPatient;
+export default GetPatient;

@@ -1,10 +1,27 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom"
+import GetPatient from './getPatient';
 import './App.css';
 
 function Form() {
+  // navigation to patient page
+  // const navigate = useNavigate();
+  const getPatient = () => {
+    // 👇️ navigate to /contacts
+    // navigate('/getPatient');
+    alert("")
+    // Niiiii Duuuuuungaaaaaa🤪🤪🤪🤪🤪🤪🤪
+    // <div>
+    //   <Routes>
+    //     <Route path="/" element={<Link to="/getPatient">Get Patient Details</Link>} />
+    //     <Route path="/getPatient" element={<GetPatient />} />
+    //   </Routes>
+    // </div>
+
+  };
+
+
 
   const [formValue, setFormValue] = useState({ fullName: "", age: "", email: "", address: "", phone: "" });
 
@@ -102,6 +119,19 @@ function Form() {
 
       <div > <button className='btn'
         onClick={handleSubmit}>Submit</button></div >
+
+      <div> <p>  </p>    </div>
+
+      <div > <button className='btn'
+        onClick={getPatient}>Get Patient INFO</button>
+      </div>
+
+      <div>
+        <Routes>
+          <Route path="/" element={<Link to="/getPatient">Get Patient Details</Link>} />
+          <Route path="/getPatient" element={<GetPatient />} />
+        </Routes>
+      </div>
 
     </>
   );

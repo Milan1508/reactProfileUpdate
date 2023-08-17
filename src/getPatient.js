@@ -13,8 +13,9 @@ const GetPatient = () => {
                 <div className="form-row">
                     <label htmlFor='item'>PatientID</label>
                     <input
-                        placeholder='35702'
-                        type="text" id='item' />
+
+                        placeholder='PatientID'
+                        type="number" id='item' />
                 </div>
             </form>
             <button className='btn'>Get Details</button>

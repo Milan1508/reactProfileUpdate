@@ -123,7 +123,7 @@ function Form() {
       <div> <p>  </p>    </div>
 
       <div > <button className='btn'
-        onClick={getPatient}>Get Patient INFO</button>
+        onClick={getPatient}>Get Patient information</button>
       </div>
 
       <div>

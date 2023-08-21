@@ -11,15 +11,8 @@ function Form() {
     // 👇️ navigate to /contacts
     // navigate('/getPatient');
     alert("")
-    // Niiiii Duuuuuungaaaaaa🤪🤪🤪🤪🤪🤪🤪
-    // <div>
-    //   <Routes>
-    //     <Route path="/" element={<Link to="/getPatient">Get Patient Details</Link>} />
-    //     <Route path="/getPatient" element={<GetPatient />} />
-    //   </Routes>
-    // </div>
-
   };
+
 
 
 
@@ -111,7 +104,7 @@ function Form() {
             placeholder="+91"
             name="phone"
             onChange={handleInput}
-            type="text" id='item' />
+            type="number" id='item' />
         </div>
       </form>
 

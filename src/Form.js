@@ -10,7 +10,7 @@ function Form() {
   const getPatient = () => {
     // 👇️ navigate to /contacts
     // navigate('/getPatient');
-    alert("")
+    alert("HI")
   };
 
 

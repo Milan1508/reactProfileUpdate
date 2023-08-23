@@ -16,7 +16,22 @@ const GetPatient = () => {
     }
 
     const handleSubmit = (e) => {
-    f
+        e.preventDefault();
+        console.log(PatientID);
+    }
+
+    const handleSubmitapi = async (e) => {
+        e.preventDefault(); // prevent page from reloading
+        try {
+            // const jsonData = JSON.stringify();
+            // console.log('JSON Data:', jsonData);
+            const response = await axios.post(url);
+
+            console.log('successful', response.data);
+        } catch (error) {
+            console.error('error in geeting the response', error);
+            // Handle the error
+        }
     };
 
     return (
